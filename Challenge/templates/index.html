@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Image Processing</title>
+</head>
+<body>
+    <h1>Upload Image for Processing</h1>
+    <form action="/upload" method="post" enctype="multipart/form-data">
+        <input type="file" name="image" required><br>
+        <input type="radio" id="nearest_neighbor" name="method" value="nearest_neighbor" checked>
+        <label for="nearest_neighbor">Nearest Neighbor</label><br>
+        <input type="radio" id="random_forest" name="method" value="random_forest">
+        <label for="random_forest">Random Forest</label><br>
+        <input type="submit" value="Submit">
+    </form>
+</body>
+</html>
